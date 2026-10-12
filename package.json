@@ -1,0 +1,31 @@
+{
+  "name": "mutsumi-audio-studio",
+  "version": "3.0.4",
+  "author": "ce1lcn",
+  "description": "睦音工坊：本地 GPT-SoVITS 配音、RVC 翻唱与实时变声工作站",
+  "main": "out/main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "package": "electron-builder",
+    "typecheck": "tsc --noEmit",
+    "icon": "node resources/make-icon.js",
+    "release": "powershell -ExecutionPolicy Bypass -File scripts/package-release.ps1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "electron": "^35.4.0",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "^3.0.4",
+    "lucide-react": "^0.507.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sharp": "^0.34.5",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}

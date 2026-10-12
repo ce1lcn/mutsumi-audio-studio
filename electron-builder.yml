@@ -1,0 +1,40 @@
+appId: com.czy.mutsumi.studio
+productName: 睦音工坊
+copyright: Copyright © 2026
+directories:
+  buildResources: resources
+files:
+  - out
+  - package.json
+npmRebuild: false
+afterPack: scripts/after-pack-icon.cjs
+win:
+  icon: resources/icon.ico
+  signAndEditExecutable: false
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: zip
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 睦音工坊
+  installerIcon: resources/icon.ico
+  uninstallerIcon: resources/icon.ico
+extraResources:
+  - from: resources/icon.ico
+    to: icon.ico
+  - from: resources/icon.png
+    to: icon.png
+  - from: electron/workers
+    to: workers
+    filter:
+      - "*.py"
+      - "*.txt"

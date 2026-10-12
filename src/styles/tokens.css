@@ -1,0 +1,108 @@
+/*
+ * 两套主题：
+ *  若叶睦（浅色）—— 薄荷绿发色、藏青制服、淡紫领结、琥珀色瞳孔
+ *  Mortis（深色）—— 酒红贝雷帽、墨黑斗篷、奶油色领巾、暗金纽扣
+ */
+:root {
+  --font-sans: "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --font-mono: "Cascadia Mono", "JetBrains Mono", Consolas, monospace;
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --ease-soft: cubic-bezier(.22, .8, .28, 1);
+  --titlebar-height: 44px;
+  --sidebar-width: 236px;
+}
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f5ee;
+  --bg-image-veil: linear-gradient(115deg, rgba(246, 247, 240, .97) 0%, rgba(246, 247, 240, .93) 48%, rgba(246, 247, 240, .74) 100%);
+  --paper: rgba(255, 255, 252, .9);
+  --paper-solid: #fffffc;
+  --paper-sunk: #eef1e8;
+  --sidebar: rgba(236, 241, 232, .82);
+  --line: rgba(43, 64, 56, .11);
+  --line-strong: rgba(43, 64, 56, .2);
+  --ink: #26352f;
+  --ink-soft: #52635b;
+  --ink-faint: #85958d;
+
+  --accent: #4f8a6c;
+  --accent-strong: #3d7258;
+  --accent-soft: #dcebe0;
+  --accent-ink: #ffffff;
+  --accent-2: #8f80c4;
+  --accent-2-soft: #ebe6f6;
+  --accent-3: #d09a33;
+  --accent-3-soft: #f8ecd2;
+  --navy: #28355c;
+
+  --ok: #3f8f62;
+  --ok-soft: #dff0e4;
+  --warn: #b7791f;
+  --warn-soft: #fbefd9;
+  --danger: #c2524f;
+  --danger-soft: #f8e0dd;
+
+  --focus-ring: 0 0 0 3px rgba(79, 138, 108, .28);
+  --shadow-sm: 0 1px 2px rgba(38, 53, 47, .06), 0 2px 8px rgba(38, 53, 47, .04);
+  --shadow-md: 0 10px 30px rgba(38, 53, 47, .08), 0 2px 6px rgba(38, 53, 47, .04);
+  --shadow-lg: 0 24px 60px rgba(38, 53, 47, .14);
+  --cta-gradient: linear-gradient(135deg, #5a9a78 0%, #4f8a6c 45%, #7d74b8 100%);
+  --cta-shadow: 0 10px 24px rgba(79, 138, 108, .32);
+  --meter-gradient: linear-gradient(90deg, #7fc39b, #4f8a6c 55%, #d09a33);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #171214;
+  --bg-image-veil: linear-gradient(115deg, rgba(23, 18, 20, .96) 0%, rgba(23, 18, 20, .9) 50%, rgba(23, 18, 20, .66) 100%);
+  --paper: rgba(38, 29, 32, .9);
+  --paper-solid: #261d20;
+  --paper-sunk: #1e1719;
+  --sidebar: rgba(30, 23, 25, .86);
+  --line: rgba(243, 226, 221, .09);
+  --line-strong: rgba(243, 226, 221, .18);
+  --ink: #f4e9e4;
+  --ink-soft: #c7b5b0;
+  --ink-faint: #8f7c78;
+
+  --accent: #c9566b;
+  --accent-strong: #de6a7e;
+  --accent-soft: rgba(201, 86, 107, .18);
+  --accent-ink: #fff7f5;
+  --accent-2: #d3ad62;
+  --accent-2-soft: rgba(211, 173, 98, .16);
+  --accent-3: #d3ad62;
+  --accent-3-soft: rgba(211, 173, 98, .16);
+  --navy: #f0dfd2;
+
+  --ok: #6fbf8d;
+  --ok-soft: rgba(111, 191, 141, .15);
+  --warn: #e0b056;
+  --warn-soft: rgba(224, 176, 86, .15);
+  --danger: #ec7d78;
+  --danger-soft: rgba(236, 125, 120, .15);
+
+  --focus-ring: 0 0 0 3px rgba(201, 86, 107, .35);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, .32);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, .45);
+  --cta-gradient: linear-gradient(135deg, #a8354b 0%, #c9566b 50%, #b88a3e 100%);
+  --cta-shadow: 0 10px 26px rgba(168, 53, 75, .4);
+  --meter-gradient: linear-gradient(90deg, #d3ad62, #c9566b 60%, #e27a8c);
+}

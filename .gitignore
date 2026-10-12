@@ -1,0 +1,34 @@
+# --- 依赖与构建产物 ---
+node_modules/
+out/
+dist/
+artifacts/
+
+# --- 运行与调试留痕 ---
+.vite-logs/
+*.log
+profile/
+
+# --- Python worker 缓存 ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- 模型、音频与本地环境（不应提交）---
+*.pth
+*.ckpt
+*.index
+*.wav
+*.flac
+*.mp3
+*.ncm
+models/
+venv/
+.venv/
+
+# --- 编辑器 / 系统 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
