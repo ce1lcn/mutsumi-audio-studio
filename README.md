@@ -107,8 +107,8 @@ npm run release    # 生成图标 → 类型检查 → 清理构建 → 打包 N
 ## 素材与许可
 
 - **代码**部分以 [MIT](LICENSE) 授权
-- **界面主题素材**（`src/assets/themes/` 下的立绘、贴纸、背景，`resources/` 下的图标源图，以及 `docs/images/` 截图）是在第三方作品角色的二次创作范围内制作的同人素材，**不在 MIT 授权范围内**
-- 这些素材仅随本仓库用于个人、非营利用途；如需商用、再分发或用于其他作品，请自行确认并遵守原作品方的要求
+- **界面主题素材**（`src/assets/themes/` 下的立绘、贴纸、背景，`resources/` 下的图标源图，由它们生成的 `resources/icon.png`、`resources/icon.ico`、`src/assets/app-icon.png`，以及 `docs/images/` 截图）是在《BanG Dream!》角色（若叶睦 / Mortis）的二次创作范围内制作的**非官方同人素材**，**不在 MIT 授权范围内**
+- 这些素材仅随本仓库用于个人、非营利用途；如需商用、再分发或用于其他作品，请遵守原作品方的利用指南（<https://bang-dream.com/bdp-guideline/>）。本项目的 MIT 许可不构成对这些素材的授权
 
 ## License
 
