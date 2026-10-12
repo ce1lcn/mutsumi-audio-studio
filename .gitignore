@@ -14,17 +14,37 @@ __pycache__/
 *.pyc
 *.pyo
 
-# --- 模型、音频与本地环境（不应提交）---
+# --- 凭据与本地环境 ---
+.env
+.env.*
+*.key
+*.pem
+local.properties
+venv/
+.venv/
+
+# --- 模型权重（各格式）---
 *.pth
 *.ckpt
 *.index
+*.pt
+*.onnx
+*.safetensors
+*.bin
+models/
+
+# --- 音频素材 ---
 *.wav
 *.flac
 *.mp3
 *.ncm
-models/
-venv/
-.venv/
+
+# --- AI 协作与备份记录 ---
+.codex-backups/
+.superpowers/
+docs/superpowers/
+backup.zip
+*.bak
 
 # --- 编辑器 / 系统 ---
 .vscode/
